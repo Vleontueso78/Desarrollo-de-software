@@ -78,13 +78,13 @@ while puntos_jugador >= 0 and puntos_jugador <= 50 and jugar == "s": # Si estos 
         else:
             print("\n      Error.\n")                            
     
-    if puntos_jugador < 0:
+    if puntos_jugador < 0: # Una vez que termina de resolver el ejercicio se verifica si el jugador tiene menos de 0 puntos.
         print("¡  Perdiste!\n")
-    elif puntos_jugador > 50:
+    elif puntos_jugador > 50: # Aca verifica si tiene mas de 50 puntos.
         print("  ¡Ganaste!\n")
     else:    
-        jugar = input("¿Querés seguir jugando otra ronda? (s/n): ")
+        jugar = input("¿Querés seguir jugando otra ronda? (s/n): ") # Si el jugador no cumple ninguna de las condiciones anteriores se le pregunta si quiere seguir jugando.
 
 
-print("\nTus puntos son:", puntos_jugador,"\n")
+print("\nTus puntos son:", puntos_jugador,"\n") # Una vez que termina el while imprime el puntaje final del jugador.
 print("\n________________________________________________________________________\n")
